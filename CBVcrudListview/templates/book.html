@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>All Books Information</h1>
+    {% for book in books%}
+    <ul>
+ <!if its a default context_object_name then it is book_list instead of books>
+
+      <li>Book Title: {{book.title}}</li>
+      <li>Book Author: {{book.author}}</li>
+      <li>Book Pages: {{book.pages}}</li>
+      <li>Book Price: {{book.price}}</li>
+      <hr>
+    </ul>
+    {%endfor%}
+  </body>
+</html>
